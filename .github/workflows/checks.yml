@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Test
+        env:
+          ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
         run: docker-compose run --rm app sh -c "python manage.py test"
 
       - name: Lint
