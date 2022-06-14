@@ -1,6 +1,30 @@
 # Recipe-App-Api
 
-### Docker commands:
+## Neste repositório se encontra um projeto ainda em desenvolvimento, de uma API para gerenciar receitas.
+### A stack
+
+[x] - Python <br>
+[x] - Django <br>
+[x] - Django Rest Framework <br>
+[x] - Docker <br>
+[x] - Docker Compose <br>
+[x] - PostgreSQL <br>
+
+### Para Executar este projeto em sua máquina, é necessário que você tenha o docker e docker compose instalado.
+
+Primeiro execute o comando a baixo para criar o container docker:
+
+```
+docker compose build
+```
+
+Em seguida execute o container com a aplicação utilizando o comando abaixo:
+
+```
+docker-compose up
+```
+
+### Comandos que podem ser necessários em uma aplicação que utiliza o Docker e Docker Compose:
 
 ```
 docker build . 
