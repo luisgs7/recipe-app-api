@@ -53,3 +53,9 @@ docker-compose down
 ```
 docker compose run --rm app sh -c "python manage.py startapp core"
 ```
+
+## Comandos personalizados
+
+```
+docker compose run --rm app sh -c "python manage.py wait_for_db"
+```
