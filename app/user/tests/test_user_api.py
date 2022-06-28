@@ -53,7 +53,7 @@ class PublicUserApiTests(TestCase):
 
     def test_password_too_short_error(self):
         """Test an error is returned if password less than 5 chars."""
-        payload = {
+        payload: dict = {
             'email': 'test@example.com',
             'password': 'testpass123',
             'name': 'Test Name',
