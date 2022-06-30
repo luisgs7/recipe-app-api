@@ -28,12 +28,12 @@ SECRET_KEY = f"{os.getenv('SECRET_KEY')}"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG") 
 
-ALLOWED_HOSTS = [] 
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS") 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'django.contrib.admin', 
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
