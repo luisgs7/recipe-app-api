@@ -29,7 +29,6 @@ SECRET_KEY = f"{os.getenv('SECRET_KEY')}"
 DEBUG = os.getenv("DEBUG") 
 
 ALLOWED_HOSTS = f'{os.getenv("ALLOWED_HOSTS")}' 
-print(f'ALLOWED_HOSTS={ALLOWED_HOSTS}')
 
 # Application definition
 
