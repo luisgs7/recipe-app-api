@@ -75,7 +75,7 @@ class PublicUserApiTests(TestCase):
         }
         create_user(**user_details)
 
-        payload = {
+        payload = { # noqa
             'email': user_details['email'],
             'password': user_details['password'],
         }
