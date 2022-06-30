@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # TODO Libs
     'rest_framework',
+    'rest_framework.authtoken',
     'drf_spectacular', 
     # TODO My Apps
     'core',

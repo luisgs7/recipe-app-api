@@ -75,11 +75,11 @@ class PublicUserApiTests(TestCase):
         }
         create_user(**user_details)
 
-        payload = { # noqa
+        payload = {
             'email': user_details['email'],
             'password': user_details['password'],
         }
-        res = self.client.post(TOKEN_URL, status.HTTP_200_OK)
+        res = self.client.post(TOKEN_URL, payload)
 
         self.assertIn('token', res.data)
         self.assertEqual(res.status_code, status.HTTP_200_OK)
