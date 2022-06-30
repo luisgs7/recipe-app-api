@@ -28,7 +28,8 @@ SECRET_KEY = f"{os.getenv('SECRET_KEY')}"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG") 
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS") 
+ALLOWED_HOSTS = f'{os.getenv("ALLOWED_HOSTS")}' 
+print(f'ALLOWED_HOSTS={ALLOWED_HOSTS}')
 
 # Application definition
 
