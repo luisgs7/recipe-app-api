@@ -114,12 +114,12 @@ class PrivateRecipeApiTests(TestCase):
             'price': Decimal('5.99'),
         }
         res = self.client.post(RECIPES_URL, payload)
-        
+
         recipe = Recipe.objects.get(id=res.data['id'])
         for k, v in payload.items():
             self.assertEqual(getattr(recipe, k), v)
         self.assertEqual(recipe.user, self.user)
-    
+
     def test_partial_update(self):
         """Test partial update of recipe."""
         original_link = 'https://iadevlab.com/post/4'
@@ -163,7 +163,7 @@ class PrivateRecipeApiTests(TestCase):
         for k, v in payload.items():
             self.assertEqual(getattr(recipe, k), v)
         self.assertEqual(recipe.user, self.user)
-    
+
     def test_update_user_returns_error(self):
         """Test changing the recipe user results in a error."""
         new_user = create_user(email='user2@example.com', password='test123')
@@ -175,7 +175,7 @@ class PrivateRecipeApiTests(TestCase):
 
         recipe.refresh_from_db()
         self.assertEqual(recipe.user, self.user)
-    
+
     def test_delete_recipe(self):
         """Test deleting a recipe succesful."""
         recipe = create_recipe(user=self.user)
