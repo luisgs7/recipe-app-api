@@ -33,7 +33,7 @@ class RecipeDetailSerializer(RecipeSerializer):
 
     class Meta(RecipeSerializer.Meta):
         fields = RecipeSerializer.Meta.fields + ['description']
-    
+
     def create(self, validated_data):
         """Create a recipe."""
         tags = validated_data.pop('tags', [])
@@ -45,5 +45,5 @@ class RecipeDetailSerializer(RecipeSerializer):
                 **tag
             )
             recipe.tags.add(tag_obj)
-        
+
         return recipe
