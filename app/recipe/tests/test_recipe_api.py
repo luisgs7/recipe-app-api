@@ -390,7 +390,7 @@ class PrivateRecipeApiTests(TestCase):
 class ImageUploadTests(TestCase):
     """Tests for the image upload API."""
 
-    def setup(self):
+    def setUp(self):
         self.client = APIClient()
         self.user = get_user_model().objects.create_user(
             'user@example.com',
@@ -405,7 +405,6 @@ class ImageUploadTests(TestCase):
     def test_upload_image(self):
         """Test uploading an image to a recipe."""
         url = image_upload_url(self.recipe.id)
-
         with tempfile.NamedTemporaryFile(suffix='.jpg') as image_file:
             img = Image.new('RGB', (10, 10))
             img.save(image_file, format='JPEG')
