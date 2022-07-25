@@ -9,6 +9,7 @@
 [x] - Docker <br>
 [x] - Docker Compose <br>
 [x] - PostgreSQL <br>
+[x] - TDD(Testes) <br>
 
 ### Para Executar este projeto em sua máquina, é necessário que você tenha o docker e docker compose instalado.
 
