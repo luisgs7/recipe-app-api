@@ -1,31 +1,38 @@
-# Recipe-App-Api
+# Recipe App Api
 
-## Neste repositório se encontra um projeto ainda em desenvolvimento, de uma API para gerenciar receitas.
-### A stack
+## This project developed in Python, consists of an API to manage recipes.
+### Stack
 
-[x] - Python <br>
-[x] - Django <br>
-[x] - Django Rest Framework <br>
-[x] - Docker <br>
-[x] - Docker Compose <br>
-[x] - PostgreSQL <br>
-[x] - TDD(Testes) <br>
+- Python <br>
+- Django <br>
+- Django Rest Framework <br>
+- Docker <br>
+- Docker Compose <br>
+- PostgreSQL <br>
+- Automated Tests(TDD) <br>
 
-### Para Executar este projeto em sua máquina, é necessário que você tenha o docker e docker compose instalado.
+## Tests description
 
-Primeiro execute o comando a baixo para criar o container docker:
+<img src="https://github.com/luisgs7/images-projects/blob/main/recipe-app-api/01.png">
+
+## API routes
+<br>
+
+### To run this project on your machine, you must have docker and docker compose installed.
+
+First run the command below to create the docker container:
 
 ```
 docker compose build
 ```
 
-Em seguida execute o container com a aplicação utilizando o comando abaixo:
+Then run the container with the application using the command below:
 
 ```
 docker-compose up
 ```
 
-### Comandos que podem ser necessários em uma aplicação que utiliza o Docker e Docker Compose:
+### Useful commands in an application that uses Docker and Docker Compose:
 
 ```
 docker build . 
@@ -55,7 +62,7 @@ docker-compose down
 docker compose run --rm app sh -c "python manage.py startapp core"
 ```
 
-## Comandos personalizados
+## Custom commands
 
 ```
 docker compose run --rm app sh -c "python manage.py wait_for_db"
