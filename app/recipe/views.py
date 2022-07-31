@@ -28,6 +28,7 @@ from recipe import serializers
 
 @extend_schema_view(
     list=extend_schema(
+        parameters =[
         OpenApiParameter(
             'tags',
             OpenApiTypes.STR,
@@ -38,6 +39,7 @@ from recipe import serializers
             OpenApiTypes.STR,
             description='Comma separated list of ingredient IDs to filter',
         ),
+        ]
     )
 )
 class RecipeViewSet(viewsets.ModelViewSet):
