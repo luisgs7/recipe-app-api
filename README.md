@@ -23,7 +23,6 @@
 <img src="https://github.com/luisgs7/images-projects/blob/main/recipe-app-api/02.png">
 
 <img src="https://github.com/luisgs7/images-projects/blob/main/recipe-app-api/03.png">
-<br>
 
 ### API routes to manage users
 
