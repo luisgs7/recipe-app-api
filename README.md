@@ -3,20 +3,32 @@
 ## This project developed in Python, consists of an API to manage recipes.
 ### Stack
 
-- Python <br>
-- Django <br>
-- Django Rest Framework <br>
-- Docker <br>
-- Docker Compose <br>
-- PostgreSQL <br>
-- Automated Tests(TDD) <br>
+- Python 
+- Django 
+- Django Rest Framework 
+- Docker 
+- Docker Compose 
+- PostgreSQL 
+- Automated Tests(TDD)
+- Drf-spectacular 
 
 ## Tests description
 
 <img src="https://github.com/luisgs7/images-projects/blob/main/recipe-app-api/01.png">
 
 ## API routes
-<br>...
+
+### API routes to manage recipes
+
+<img src="https://github.com/luisgs7/images-projects/blob/main/recipe-app-api/02.png">
+
+<img src="https://github.com/luisgs7/images-projects/blob/main/recipe-app-api/03.png">
+<br>
+
+### API routes to manage users
+
+<img src="https://github.com/luisgs7/images-projects/blob/main/recipe-app-api/04.png">
+
 
 ### To run this project on your machine, you must have docker and docker compose installed.
 
@@ -31,6 +43,7 @@ Then run the container with the application using the command below:
 ```
 docker-compose up
 ```
+Para ler a Documentação da API, basta acessar: http://0.0.0.0:8000/api/docs/
 
 ### Useful commands in an application that uses Docker and Docker Compose:
 
