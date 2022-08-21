@@ -74,6 +74,14 @@ docker-compose down
 docker compose run --rm app sh -c "python manage.py startapp core"
 ```
 
+```
+docker compose -f docker-compose-deploy.yml up
+```
+
+```
+docker compose -f docker-compose-deploy.yml down
+```
+
 ## Custom commands
 
 ```
